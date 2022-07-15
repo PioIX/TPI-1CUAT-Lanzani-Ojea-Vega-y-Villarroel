@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header nav img{
+    width: 30px;
+    padding: 10px;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    font-family: "Anton", "sans-serif";
+    text-align: center;
+    justify-content: top;
+    padding-bottom: 15px;
+}
+
+main .contenedor div a{
+    text-decoration: none;
+    color:black;
+}
+
+main .contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor div{
+    text-align: center;
+    transition: 0.3s;
+}
+
+.contenedor div:hover{
+    transform: scale(1.1)
+}
+
+.contenedor div p, li{
+    font-family: "Finlandica", "sans-serif";
+}
+
+.mas-paginas p{
+    font-family: "Finlandica", "sans-serif";
+    padding-top: 15px;
+    padding-left: 15px;
+    
+}
+
+.mas-paginas img{
+    padding-top: 10px;
+    width: 300px;
+    padding-left: 15px;
+}

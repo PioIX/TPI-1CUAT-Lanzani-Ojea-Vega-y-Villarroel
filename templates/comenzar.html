@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comenzar</title>
+  <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="static/comenzar.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="https://tpi-1cuat-lanzani-ojea-vega-y-villarroel.catalinavega6.repl.co/"><img src="static/img/flecha-izquierda.png" alt="Volver al inicio"></a>
+    </nav>
+  </header>
+  <div class="column is-4 is-offset-4">
+      <h1 class="title">Iniciar Sesión</h1>
+      <div class="box">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="notification is-danger">
+                    {{ messages[0] }}
+                </div>
+            {% endif %}
+        {% endwith %}
+        <form id="formIniciarSesion" method="POST" action="/juego">
+            <div class="field">
+                <div class="control">
+                    <label for="nombre">Nombre</label>
+                    <input id="nom" class="input is-large" type="text" name="nombre" placeholder="Ingrese un nombre" autofocus="" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <label for="contraseña">Contraseña</label>
+                    <input id="con" class="input is-large" type="password" name="contraseña" placeholder="Contraseña" required>
+                </div>
+            </div>
+          <br>
+        <input type="button" value="Iniciar Sesión" onclick="validar({{listaUsuarios}})">
+        </form>
+        <br><br>
+        <label class="registrarse">¿No tenés cuenta? <a href="https://tpi-1cuat-lanzani-ojea-vega-y-villarroel.catalinavega6.repl.co/registro">Registrate</a></label>
+      </div>
+    <script src="../static/script.js" type="text/javascript"></script>
+</body>
+</html>

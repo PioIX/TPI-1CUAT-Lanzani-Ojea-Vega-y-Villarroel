@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.card{
+  margin-top: 35px;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.botones #correcto{
+  
+}
+
+.card-body{
+  text-align: center;
+}
+
+.botones{
+  margin: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn{
+  transition: 0,3s;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width:1266px){
+  .btn{
+    margin: 5px;
+  }
+}
