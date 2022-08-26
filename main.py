@@ -95,5 +95,5 @@ def irAJuego():
   contraseñaUsuario = request.form['contraseña']
   añadirBaseDeDatos(nombreUsuario, contraseñaUsuario)
   return render_template("juego.html", nombreUsuario = [nombreUsuario], preguntasRespuestas = obtenerPreguntasYRespuestas())
-
-app.run(host='0.0.0.0', port=81)
+if __name__ == '__main__':
+  app.run(host='0.0.0.0', port=81)
