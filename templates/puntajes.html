@@ -6,13 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Puntajes</title>
   <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="static/puntajes.css">
+  <link rel="stylesheet" href="../../../static/puntajes.css">
 </head>
-<body>
-    <header>
+<body class="fondo">
+  <header>
     <nav>
-      <a href="https://tpi-1cuat-lanzani-ojea-vega-y-villarroel.catalinavega6.repl.co/"><img src="static/img/flecha-izquierda.png" alt="Volver al inicio"></a>
+      <a href="https://tpi-1cuat-lanzani-ojea-vega-y-villarroel.catalinavega6.repl.co/"><img src="../../../static/img/flecha-izquierda.png" alt="Volver al inicio"></a>
     </nav>
   </header>
+  <main>
+    <section>
+    <table class="tabla" border=1 align="center">
+      <tr>
+        <th colspan="3"><h2>Puntajes</h2></th>
+      </tr>
+      {% for i in range (15) %}
+      <tr>
+        <td style="padding-left:22px;padding-right:22px;">{{i+1}}</td>
+        <td style="padding-left:22px;padding-right:22px;">{{listaPersonas[i][1]}}</td>
+        <td style="padding-left:22px;padding-right:22px;">{{listaPersonas[i][3]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </section>
+  </main>
 </body>
 </html>

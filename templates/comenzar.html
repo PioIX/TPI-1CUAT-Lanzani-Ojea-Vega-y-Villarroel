@@ -8,7 +8,7 @@
   <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="static/comenzar.css">
 </head>
-<body>
+<body class="fondo">
   <header>
     <nav>
       <a href="https://tpi-1cuat-lanzani-ojea-vega-y-villarroel.catalinavega6.repl.co/"><img src="static/img/flecha-izquierda.png" alt="Volver al inicio"></a>
@@ -24,7 +24,7 @@
                 </div>
             {% endif %}
         {% endwith %}
-        <form id="formIniciarSesion" method="POST" action="/juego">
+        <center><form id="formIniciarSesion" method="POST" action="/juego">
             <div class="field">
                 <div class="control">
                     <label for="nombre">Nombre</label>
@@ -39,8 +39,8 @@
                 </div>
             </div>
           <br>
-        <input type="button" value="Iniciar Sesión" onclick="validar({{listaUsuarios}})">
-        </form>
+        <center><input class="boton" type="button" value="Iniciar Sesión" onclick="validar({{listaUsuarios}})"></center>
+        </form></center>
         <br><br>
         <label class="registrarse">¿No tenés cuenta? <a href="https://tpi-1cuat-lanzani-ojea-vega-y-villarroel.catalinavega6.repl.co/registro">Registrate</a></label>
       </div>

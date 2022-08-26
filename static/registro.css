@@ -11,16 +11,19 @@ header nav img{
     padding: 10px;
 }
 
+.fondo{
+  background: url("./img/fondoRegistro.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 h1{
   color: rgb(0, 0, 0);
   font-family: "Anton", "sans-serif";
-  padding-left: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 label{
   font-family: "Finlandica", "sans-serif";
-}
-
-form{
-  padding-left: 10px;
 }

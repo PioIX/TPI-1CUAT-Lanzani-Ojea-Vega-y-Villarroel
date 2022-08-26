@@ -8,7 +8,7 @@
   <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="static/registro.css">
 </head>
-<body>
+<body class="fondo">
   <header>
     <nav>
       <a href="https://tpi-1cuat-lanzani-ojea-vega-y-villarroel.catalinavega6.repl.co/"><img src="static/img/flecha-izquierda.png" alt="Volver al inicio"></a>
@@ -25,7 +25,7 @@
                 </div>
             {% endif %}
         {% endwith %}
-        <form id="formRegistro" method="POST" action="/juego">
+        <center><form id="formRegistro" method="POST" action="/juego">
             <div class="field">
                 <div class="control">
                     <label for="nombre">Nombre</label>
@@ -36,11 +36,11 @@
             <div class="field">
                 <div class="control">
                     <label for="contraseña">Contraseña</label>
-                    <input class="input is-large" type="password" name="contraseña" id="contraseñaElegida" placeholder="Contraseña" required>
+                    <input class="input is-large" type="password" name="contraseña" id="contraseñaElegida" placeholder="Contraseña" required></center>
                 </div>
             </div>
           <br>
-          <input type="button" value="Crear Cuenta" onclick="confirmarCuentaRepetida({{listaUsuarios}})">
+          <center><input type="button" value="Crear Cuenta" onclick="confirmarCuentaRepetida({{listaUsuarios}})"></center>
         </form>
         <br><br>
       </div>

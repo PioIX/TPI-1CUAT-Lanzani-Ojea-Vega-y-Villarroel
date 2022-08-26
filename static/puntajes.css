@@ -1,9 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
 }
 
 header nav img{
-    width: 30px;
-    padding: 10px;
+  width: 30px;
+  padding: 10px;
 }
+
+h2{
+  color: rgb(0, 0, 0);
+  font-family: "Anton", "sans-serif";
+}
+
+tr{
+  font-family: "Finlandica", "sans-serif";
+}
+
+.fondo{
+  background-image: url("./img/fondo.PNG");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tabla{
+  margin: auto; 
+}
+
+@media screen and (max-height: )

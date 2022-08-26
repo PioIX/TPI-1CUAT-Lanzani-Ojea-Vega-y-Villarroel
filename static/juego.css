@@ -3,10 +3,16 @@
   padding: 0;
 }
 
+#fondo{
+  background-image: url("./img/imagenesFondoPreguntas/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .card{
-  margin-top: 35px;
-  margin-left: 35%;
-  margin-right: 35%;
+  margin-top: 25px;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .botones #correcto{
@@ -18,15 +24,19 @@
 }
 
 .botones{
+  
   margin: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .btn{
   transition: 0,3s;
+  margin-bottom: 15px;
 }
 
 .btn:hover{
@@ -37,4 +47,32 @@
   .btn{
     margin: 5px;
   }
+}
+
+#jugador{
+  float: left;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  font-family: "Anton", "sans-serif";
+  text-align: center;
+  justify-content: top;
+  border-radius: 5px;
+}
+
+#temporizador{
+  float: right;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  font-family: "Anton", "sans-serif";
+  text-align: center;
+  justify-content: top;
+  border-radius: 5px;
 }

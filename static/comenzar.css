@@ -14,11 +14,19 @@ header nav img{
 h1{
   color: rgb(0, 0, 0);
   font-family: "Anton", "sans-serif";
-  padding-left: 10px;
+  display: flex;
+  justify-content: center;
 }
 
-form{
-  padding-left: 10px;
+#formIniciarSesion{
+  display: flex;
+  flex-direction: column;
+}
+
+.fondo{
+  background-image: url("./img/fondoIniciarSesion.jfif");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 label{
@@ -26,5 +34,12 @@ label{
 }
 
 .registrarse{
-  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.boton{
+  display: flex;
+  justify-content: center;
+  width: 100px;
 }

@@ -6,6 +6,12 @@
     margin: 0;
 }
 
+.fondo{
+    background-image: url("./img/fondoInformacion.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 header nav img{
     width: 30px;
     padding: 10px;
@@ -45,14 +51,14 @@ main .contenedor{
 }
 
 .mas-paginas p{
+    display: flex;
+    justify-content: center;
     font-family: "Finlandica", "sans-serif";
     padding-top: 15px;
     padding-left: 15px;
-    
 }
 
-.mas-paginas img{
+.fotopampa{
     padding-top: 10px;
     width: 300px;
-    padding-left: 15px;
 }
